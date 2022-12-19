@@ -61,21 +61,6 @@ const config = {
             x: {
                 type: 'realtime',
                 realtime: {
-
-
-
-                    //onRefresh: chart => {
-
-
-
-                    //    chart.data.datasets(dataset => {
-                    //        dataset.data.push({
-                    //            x: Date.now(),
-                    //            y: Math.random()
-
-                    //        });
-                    //    });
-                    //}
                 }
             }
         }
