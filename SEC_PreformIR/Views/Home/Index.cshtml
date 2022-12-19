@@ -1,0 +1,63 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+  <style>
+/*    #gauge-container {
+      background: transparent url("@Url.Content("~/Images/gauge-container-partial.png")") no-repeat 50% 50%;
+      width: 386px;
+      height: 386px;
+      text-align: center;
+      margin: 0 auto 30px auto;
+    }
+
+    #gauge {
+      width: 350px;
+      height: 300px;
+      margin: 0 auto;
+      border-color: transparent;
+    }
+
+    #gauge-container .k-slider {
+      margin-top: -11px;
+      width: 140px;
+    }
+
+    html[class*="dark"] .k-body {
+      background-color: #2e374f;
+    }*/
+  </style>
+
+
+<div id="gauge-container">
+@*  @(Html.Kendo().RadialGauge()
+   .. .Name("gauge")
+    .Pointer(pointer => pointer.Value(0))
+    .Scale(scale => scale
+      ...MinorUnit(5)
+      .StartAngle(-30)
+      .EndAngle(210)
+      .Max(200) .Ranges(ranges =>
+      {
+        ranges.Add().From(0).To(120).Color("green");
+        ranges.Add().From(120).To(320).Color("red");
+        
+      })
+    )
+
+    )*@
+
+@*  @(Html.Kendo().Slider()
+    .Name("gauge-value")
+    .Value(65)
+    .Min(0)
+    .Max(180)
+    .ShowButtons(false)
+    .Events(e => e.Change("change"))
+    .HtmlAttributes(new { title = "slider" })
+    )*@
+</div>
+
+
+
+<label id="lblTemperature"></label>
