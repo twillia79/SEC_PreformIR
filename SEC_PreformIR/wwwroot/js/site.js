@@ -32,7 +32,7 @@ async function start() {
 connection.on("NotifyTempChange", function (status) {
     //change gauge on receive
     console.log(status);
-    var progress_width = status.temperatureValue / 160 * 100;
+    var progress_width = status.temperatureValue / 200 * 100;
     document.getElementById("gauge-container").style.width = progress_width + "%";
     document.getElementById("temperature-data").innerHTML = status.temperatureValue;
 
@@ -59,9 +59,11 @@ const config = {
     options: {
         scales: {
             x: {
-                type: 'realtime',
-                realtime: {
-                }
+                type: 'realtime'
+            },
+            y: {
+                suggestedMin: 80,
+                suggestedMax: 190
             }
         }
     }
