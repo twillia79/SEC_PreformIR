@@ -22,7 +22,7 @@ namespace SEC.PreformTempControl.Controllers
         private readonly EntityContext context;
         private readonly Microsoft.AspNetCore.Hosting.IHostingEnvironment env;
         private float _temperature = 0;
-    
+
         #endregion
 
         #region Constructor

@@ -63,7 +63,7 @@ const config = {
             },
             y: {
                 suggestedMin: 80,
-                suggestedMax: 190
+                suggestedMax: 200
             }
         }
     }
